@@ -1,0 +1,25 @@
+.today {
+  color: #ffffff;
+  background: #018574;
+}
+tr { 
+  text-align: center
+}
+.last {
+  color: #0000006f;
+}
+.text {
+  text-align: center;
+  padding: 4px;
+  background: #39dac53a
+}
+.t2 {
+  color: #036c5e;
+  font-weight: bold;
+  background: #39dac5ba
+}
+.text2 {
+  background: #39dac57e;
+  color: #000000b0;
+  padding: 5px;
+}
