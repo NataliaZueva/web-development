@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Конструктор визиток</title>
+  </head>
+  <body>
+    <div class="card-contener">
+      <div class="carf-form">
+        <form class="rorm">
+          <h2>Конструктор визиток</h2>
+          <div class="form__field">
+            <div class="entered_text">Наименование организации:</div>
+            <input type="text" name="organization" value='OOO "Ориентир"' />
+            <br />
+
+            <div class="entered_text">Фамилия, имя, отчество</div>
+            <input type="text" name="FIO" value="Зуева Наталья Владимировна" />
+            <br />
+
+            <div class="entered_text">Должность</div>
+            <input type="text" name="post" value="Студент" />
+            <br />
+
+            <div class="entered_text">Телефон</div>
+            <input type="text" name="phone" value="8 (999) 123-45-67" /> <br />
+
+            <div class="entered_text">E-mail</div>
+            <input type="email" name="mail" value="natta_liya@vk.com" />
+            <br />
+
+            <div class="entered_text">Адрес</div>
+            <input
+              type="text"
+              name="place"
+              value="Иркутск, Байкальская, 421"
+            /><br />
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" onclick="handle(this); return false;">
+              Применить
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card-preview">
+        <div class="card">
+          <span class="card__organization"></span>
+          <span class="card__FIO"></span>
+          <span class="card__post"></span>
+          <div class="card__right">
+            <span class="card__phone"></span>
+            <span class="card__mail"></span>
+            <span class="card__place"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

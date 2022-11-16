@@ -1,0 +1,54 @@
+body {
+    background-color: #a39fb5;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #efd0a152;
+}
+
+.card-contener {
+    background-color: #d8dae7;
+    max-width: 1024px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+.card-preview{
+    margin-top: 30px;
+}
+input{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.card-preview {
+    text-align: center;
+    padding: 20px;
+    width: 450px;
+    height: auto;
+    border-radius: 25px;
+    padding: 0 20px 0 20px;
+    background-color: white;
+}
+.card {
+    padding: 15px;
+}
+.card-preview span {
+    display: block;
+}
+span.card__organization {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+span.card__FIO {
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.card__right{
+    margin-left: 55%;
+    margin-top: 20px;
+    text-align: left;
+}
