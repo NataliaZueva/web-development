@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+
+  <body>
+    <div class="todo-list">
+      <div class="tasks">
+        <div class="tasks__header">
+          <span class="tasks__header-title">Список задач</span>
+          <span class="task-list__add-button">
+            <button type="button" class="add-button">+</button>
+            Добавить
+          </span>
+        </div>
+
+        <ul class="task-list">
+          <li class="task-list__item item1">
+            <input class="task-list__done" type="checkbox" name="" />
+            <span class="task-list__prio">⚡</span>
+            <span class="task-list__description">Задача 1</span>
+            <span class="task__edit-buttons">
+              <button type="button" class="task-list__edit-button">ред.</button>
+              <button type="button" class="task-list__delete-button delete">уд.</button>
+            </span>
+          </li>
+          <li class="task-list__item">
+            <input class="task-list__done" type="checkbox" name="" />
+            <span class="task-list__prio"></span>
+            <span class="task-list__description">Задача 2</span>
+            <span class="task__edit-buttons">
+              <button type="button" class="task-list__edit-button edit">ред.</button>
+              <button type="button" class="task-list__delete-button">уд.</button>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="task-form">
+        <form class="tasks-form">
+          <div class="task-title">Карточка задачи</div>
+          <label class="task-task">Задача</label>
+          <input
+            type="text"
+            name="description"
+            class="task-description"
+            placeholder="Описание задачи"
+          />
+
+          <label class="task-form__priority">
+            <input class="task-list__prio" type="checkbox" name="prio" />
+            Высокий приоритет ⚡
+          </label>
+          <br />
+          <button class="task-button save" type="submit">Сохранить</button>
+          <button class="task-button cancellation" type="button" class="task-form__close">
+            Отмена
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+.todo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    justify-items: stretch;
+    margin: 0 auto;
+}
+.task-form.shown {
+    display: block;
+}
+
+.task-list__item--template {
+    display: none;
+}
+.task-form {
+    margin-top: 71px;
+    /* display: none; */
+    top: 71px;
+    padding: 30px 28px 30px 28px;
+    height: 170px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 0px 14px 14px 0px;
+    opacity: 1;
+}
+
+.task-title{
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.task-task{
+    text-align: left;
+    font-size: 17px;
+    color: #707070;
+    margin-bottom: 19px;
+    padding-bottom: 19px;
+}
+.task-description{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.task-form__priority{
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 17px;
+    color: #707070;
+}
+.task-button{
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 17px;
+    background: #3F88E8 0% 0% no-repeat padding-box;
+    border-radius: 32px;
+    border: none;
+    color: #fff;
+}
+.cancellation {
+    background: none;
+    color: #707070;
+    border: 1px solid #707070;
+}
+
+
+
+/* Список задач начало */
+.tasks {
+    height: 1080px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+}
+.tasks__header{
+    /* text-align: center; */
+    font: normal normal bold 20px/24px Roboto;
+    color: #707070;
+    padding: 32px 0px 15px 15px;
+}
+.tasks__header-title{
+    clear: both;
+    /* margin-top: 32px;
+    padding-top: 32px; */
+}
+.task-list__add-button{ 
+    float: right;
+    display: flex;
+    padding-right: 15px;
+}
+.task__edit-buttons{
+    float: right;
+}
+.add-button {
+    margin-right: 12px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 15px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.7s;
+    list-style-type: none;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li:nth-child(odd) {
+    background: #0606060A;
+}
+ul li:hover {
+    background: #ddd;
+}
+.task-list__prio{
+    padding: 0 15px 0  0;
+}
+.task-list__done{
+    margin: 0 15px 0 0;
+}
+
+
+
+
+
+/* При нажатии на кнопку, добавить цвет фона и вычеркнуть текст */
+/* .task-list__done.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+} */
+
+
+/* Добавить "checked" отметить при нажатии на кнопку */
+/* ul li.checked::before,
+.task-list__done::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(112, 72, 72);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+} */
+
+
