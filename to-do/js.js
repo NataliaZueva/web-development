@@ -2,14 +2,17 @@
 (function () {
   let taskList = document.querySelector(".task-list");
   let taskForm = document.querySelector(".tasks-form");
-      console.log('2');
+  let add_btn = document.querySelector(".add-button");
+  let todoList = document.querySelector('.todo-list');
+  let addButton = todoList.querySelector('.task-list__add-button');
+  let taskForms = todoList.querySelector('.task-form');
+  let form = todoList.querySelector('form');
 
   taskList.addEventListener('click', function (e) {
     let btn = e.target;
-    let item = btn.closest('.task-list__item');
-    let prio = item.querySelector('.task-list__prio');
-    let description = item.querySelector('.task-list__description');
-    console.log('3');
+    let item = btn.closest('.task-list__item'), 
+      prio = item.querySelector('.task-list__prio'),
+      description = item.querySelector('.task-list__description');
 
     let saveTask = (task) => (e) => {
       e.preventDefault()
@@ -19,7 +22,7 @@
       taskForm.classList.toggle("notshown");
     };
 
-    if (btn.classList.contains("task__button-edit")) {
+    if (btn.classList.contains("task-list__edit-button")) {
             taskForm.classList.toggle("notshown")
             taskForm.description.value = description.textContent;
             if (prio.textContent) {
@@ -29,12 +32,11 @@
             };
             taskForm.onsubmit = saveTask(item);
         };
-        if (btn.classList.contains("task__button-del")) {
+        if (btn.classList.contains("task-list__delete-button")) {
             item.remove()
         };
   });
 
-  let add_btn = document.querySelector(".add-button");
   add_btn.addEventListener('click', event => {
       taskForm.classList.toggle("notshown")
       let addTask = (e) => {
@@ -47,5 +49,12 @@
           taskForm.classList.toggle("notshown")
       }
       taskForm.onsubmit = addTask;
+  });
+  
+  addButton.addEventListener('click', (e) => {
+    taskForms.classList.toggle('shown');
+    formAction = 'create';
+    form.reset();
+    formItem = null;
   });
 })();
