@@ -1,0 +1,14 @@
+body {
+    background: rgb(214, 245, 238);
+}
+.ms { 
+    --columns-count: 5;
+    display: grid;
+    grid-template-columns: repeat(8, 44px);
+    grid-gap: 5px;
+    display: none;
+}
+button { 
+    height: 40px;
+    font-size: 24px;
+}

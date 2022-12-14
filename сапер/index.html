@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сапер</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body oncontextmenu="return false;">
+    <div class="button2">
+      <button
+        onclick="(document.querySelector('.ms').style.display='grid') , (document.getElementById('rules').style.display='none')"
+      >
+        Начать игру
+      </button>
+    </div>
+
+    <div class="ms"></div>
+
+    <div id="rules">
+      <h3>Правила игры</h3>
+      <ol>
+        <li class="rules__list">Правая кнопка мыши - флажок</li>
+        <li class="rules__list">Девая кнопка мыши - сделать выбор поля</li>
+        <li class="rules__list">Победа - при открытии всех ячеек без бомб</li>
+        <li class="rules__list">Проигрыш - при открытии бомбы</li>
+      </ol>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
