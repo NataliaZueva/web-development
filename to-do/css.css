@@ -15,6 +15,7 @@
     display: none;
 }
 .task-form {
+    position: sticky;
     margin-top: 71px;
     display: none;
     top: 71px;
@@ -68,7 +69,7 @@
 
 /* Список задач начало */
 .tasks {
-    height: 1080px;
+    height: 98vh;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 6px #00000029;
 }
@@ -88,8 +89,40 @@
     display: flex;
     padding-right: 15px;
 }
+.add-button{ 
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    border-radius: 2px; 
+    background:
+        linear-gradient(#fff, #fff),
+        linear-gradient(#fff, #fff),
+        #707070;
+    background-position: center;
+    background-size: 60% 3px, 3px 60%;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+}
+
+.add-button:hover{
+    background:
+        linear-gradient(#fff, #fff),
+        linear-gradient(#fff, #fff),
+        rgb(97, 64, 64);
+    background-size: 60% 3px, 3px 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .task__edit-buttons{
     float: right;
+    margin-top: -5px;
+    font-size: 25px;
+    color: #707070;
+}
+.task-list__edit-button:hover, .task-list__delete-button:hover {
+    color: #694747;
+    font-size: 28px;
+    margin-top: -7px;
 }
 .add-button {
     margin-right: 12px;
@@ -124,32 +157,3 @@ ul li:hover {
 .task-list__done{
     margin: 0 15px 0 0;
 }
-
-
-
-
-
-/* При нажатии на кнопку, добавить цвет фона и вычеркнуть текст */
-/* .task-list__done.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-} */
-
-
-/* Добавить "checked" отметить при нажатии на кнопку */
-/* ul li.checked::before,
-.task-list__done::before {
-    content: '';
-    position: absolute;
-    border-color: rgb(112, 72, 72);
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-} */
-
-

@@ -22,6 +22,7 @@
       taskForm.classList.toggle("notshown");
     };
 
+
     if (btn.classList.contains("task-list__edit-button")) {
             taskForm.classList.toggle("notshown")
             taskForm.description.value = description.textContent;
@@ -41,6 +42,7 @@
       taskForm.classList.toggle("notshown")
       let addTask = (e) => {
           e.preventDefault()
+          // let newtask = document.querySelector('.item1').cloneNode(true);
           let newtask = document.querySelector('.item1').cloneNode(true);
           newtask.querySelector(".task-list__prio").textContent = taskForm.prio.checked ? '⚡' : '';
           newtask.querySelector(".task-list__description").textContent = taskForm.description.value;
@@ -53,8 +55,10 @@
   
   addButton.addEventListener('click', (e) => {
     taskForms.classList.toggle('shown');
-    formAction = 'create';
-    form.reset();
-    formItem = null;
+    // formAction = 'create';
+    // form.reset();
+    // formItem = null;
   });
+
+  
 })();

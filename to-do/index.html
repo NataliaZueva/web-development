@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>To-do list</title>
     <link rel="stylesheet" href="css.css" />
+    <!-- <script src="../jquery-3.6.2.js"></script> -->
   </head>
 
   <body>
@@ -13,19 +14,19 @@
         <div class="tasks__header">
           <span class="tasks__header-title">Список задач</span>
           <span class="task-list__add-button">
-            <button type="button" class="add-button">+</button>
+            <span class="add-button"></span>
             Добавить
           </span>
         </div>
 
         <ul class="task-list">
-          <li class="task-list__item item1">
+          <li id="idd" class="task-list__item item1">
             <input class="task-list__done" type="checkbox" name="" />
             <span class="task-list__prio">⚡</span>
             <span class="task-list__description">Задача 1</span>
             <span class="task__edit-buttons">
-              <button type="button" class="task-list__edit-button">ред.</button>
-              <button type="button" class="task-list__delete-button delete">уд.</button>
+              <span class="task-list__edit-button edit">&#9998;</span>
+              <span class="task-list__delete-button delete">&#128465;</span>
             </span>
           </li>
           <li class="task-list__item">
@@ -33,8 +34,8 @@
             <span class="task-list__prio"></span>
             <span class="task-list__description">Задача 2</span>
             <span class="task__edit-buttons">
-              <button type="button" class="task-list__edit-button edit">ред.</button>
-              <button type="button" class="task-list__delete-button">уд.</button>
+              <span class="task-list__edit-button edit">&#9998;</span>
+              <span class="task-list__delete-button delete">&#128465;</span>
             </span>
           </li>
         </ul>
