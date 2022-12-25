@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.pazzle-game{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 5px; */
+}
+.pazzle-result{
+    background: rgb(135, 160, 202);
+}
+/* 
+.img {
+    background: uml();
+}
+.pazzle-tile{
+    height: 50px;
+    width: 50px;
+}
+.pazzle-source, .pazzle-item{ 
+
+}
+.pazzle-item{ 
+    background: url(robot.png);
+    background-position:  0 0;
+    background-repeat: no-repeat;
+
+}
+.pazzle-result{
+    background: rgb(168, 155, 155);
+}
+
+.pazzle-cell {
+    border: 1px solid rgb(106, 106, 106); 
+} */
